@@ -1,6 +1,6 @@
 // Код первой игры
 
-import { helloUser, askName } from '../src/cli.js'
+import { helloUser, myName } from '../src/cli.js'
 
 import readlineSync from 'readline-sync'
 
@@ -9,7 +9,7 @@ const isEven = (number) => number % 2 === 0
 
 const gameEven = () => {
   helloUser()
-  const userName = askName()
+  const userName = myName()
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
 
   let correctAnswers = 0

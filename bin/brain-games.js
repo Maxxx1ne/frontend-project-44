@@ -1,4 +1,4 @@
-import { helloUser, askName } from '../src/cli.js'
+import { helloUser, myName } from '../src/cli.js'
 
 helloUser()
-const userName = askName()
+const userName = myName()
