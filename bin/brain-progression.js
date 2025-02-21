@@ -1,4 +1,4 @@
-// Ход прогрессии
+// Код хода прогрессии
 import readlineSync from 'readline-sync'
 
 const progration = (start, step, length) => {

@@ -1,4 +1,5 @@
-// Калькулятор
+// Функция калькулятор
+
 import { helloUser, myName } from '../src/cli.js'
 
 import readlineSync from 'readline-sync'
@@ -22,7 +23,7 @@ const calculate = (num1, num2, operator) => {
     default:
       throw new Error('Unknown operator')
   }
-};
+}
 
 const gameCalc = () => {
   helloUser()
@@ -39,8 +40,8 @@ const gameCalc = () => {
     const question = (`${num1} ${operator} ${num2}`)
 
     console.log(`Question: ${question}`)
-    const userAnswer = readlineSync.question('Your answer: ')
 
+    const userAnswer = readlineSync.question('Your answer: ')
     const correctAnswer = calculate(num1, num2, operator)
 
     if (parseInt(userAnswer, 10) === correctAnswer) {

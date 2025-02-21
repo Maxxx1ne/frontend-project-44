@@ -1,4 +1,4 @@
-// Код для ввода имени
+// Код приветствия для ввода имени
 
 import readlineSync from 'readline-sync'
 

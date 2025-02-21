@@ -1,4 +1,4 @@
-// Код первой игры
+// Код четного числа
 
 import { helloUser, myName } from '../src/cli.js'
 

@@ -1,4 +1,4 @@
-// Простое число
+// Код простого числа
 
 import readlineSync from 'readline-sync'
 
