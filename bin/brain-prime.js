@@ -1,5 +1,3 @@
-// Код простого числа
-
 import readlineSync from 'readline-sync'
 
 
@@ -17,7 +15,8 @@ const primeGame = () => {
   console.log(`Hello, ${userName}!`)
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
 
-  const rounds = 3
+  const rounds = 3 // Количество вопросов
+  let correctAnswers = 0
 
   for (let i = 0; i < rounds; i++) {
     const number = Math.floor(Math.random() * 100)
@@ -28,14 +27,14 @@ const primeGame = () => {
 
     if (userAnswer === correctAnswer) {
       console.log('Correct!')
+      correctAnswers += 1
     } else {
       console.log(`'${userAnswer}' is wrong answer; (Correct answer was '${correctAnswer}').`)
-      console.log(`Let's try again, ${userName}!`)
-      return
     }
   }
 
-  console.log(`Congratulations, ${userName}!`)
+  console.log(`Congratulations, ${userName}!`);
+  console.log(`You answered correctly ${correctAnswers} out of ${rounds} questions.`)
 }
 
 primeGame()

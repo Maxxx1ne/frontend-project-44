@@ -1,6 +1,4 @@
-// Какой-то гсд
-
-import readlineSync from 'readline-sync';
+import readlineSync from 'readline-sync'
 
 
 const gcd = (a, b) => {
@@ -10,8 +8,7 @@ const gcd = (a, b) => {
   return a
 }
 
-const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-
+const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
 const gcdGame = () => {
   console.log('Welcome to the Brain Games!')
@@ -19,7 +16,8 @@ const gcdGame = () => {
   console.log(`Hello, ${userName}!`)
   console.log('Find the greatest common divisor of given numbers.')
 
-  const rounds = 3
+  const rounds = 3 // Количество вопросов
+  let correctAnswers = 0
 
   for (let i = 0; i < rounds; i++) {
     const num1 = randomNum(1, 100)
@@ -31,14 +29,15 @@ const gcdGame = () => {
 
     if (userAnswer === correctAnswer) {
       console.log('Correct!')
+      correctAnswers += 1
     } else {
-      console.log(`'${userAnswer}' is wrong answer; (Correct answer was ${correctAnswer}).`)
-      console.log(`Let's try again, ${userName}!`)
-      return
+      console.log(`'${userAnswer}' is wrong answer; (Correct answer was '${correctAnswer}').`)
     }
   }
 
   console.log(`Congratulations, ${userName}!`)
+  console.log(`You answered correctly ${correctAnswers} out of ${rounds} questions.`)
 }
 
 gcdGame()
+
