@@ -1,3 +1,5 @@
+// Какой-то гсд
+
 import readlineSync from 'readline-sync';
 
 const gcd = (a, b) => {
