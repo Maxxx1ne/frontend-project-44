@@ -1,6 +1,8 @@
-import { helloUser, myName } from '../src/cli.js'
+// Функция прогрессии
 
+import { helloUser, myName } from '../src/cli.js'
 import readlineSync from 'readline-sync'
+
 
 const progration = (start, step, length) => {
   return Array.from({ length }, (_, index) => start + index * step)

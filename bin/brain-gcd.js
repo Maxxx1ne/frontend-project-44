@@ -1,5 +1,6 @@
-import { helloUser, myName } from '../src/cli.js'
+// Функция НОД
 
+import { helloUser, myName } from '../src/cli.js'
 import readlineSync from 'readline-sync'
 
 

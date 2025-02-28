@@ -1,4 +1,4 @@
-// Код четного числа
+// Функция четного числа
 
 import { helloUser, myName } from '../src/cli.js'
 import readlineSync from 'readline-sync'

@@ -1,4 +1,4 @@
-// Приветствие
+// Функция приветствия
 
 import { helloUser, myName } from '../src/cli.js'
 
