@@ -1,42 +1,44 @@
+#!/usr/bin/env node
 // Функция простого числа
 
-import { helloUser, myName } from '../src/cli.js'
 import readlineSync from 'readline-sync'
 
+// Функция проверки на простое число
+const isPrime = (num) => {
+    if (num <= 1) return false
+    if (num <= 3) return true
+    if (num % 2 === 0 || num % 3 === 0) return false
 
-const primenum = (num) => {
-  if (num < 2) return false
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) return false
-  }
-  return true
-}
-
-const primeGame = () => {
-  helloUser()
-  const userName = myName()
-  console.log('Find the greatest common divisor of given numbers.')
-
-  const rounds = 3 // Количество вопросов
-  let correctAnswers = 0
-
-  for (let i = 0; i < rounds; i++) {
-    const number = Math.floor(Math.random() * 100)
-    console.log(`Question: ${number}`)
-    const userAnswer = readlineSync.question('Your answer: ').toLowerCase()
-
-    const correctAnswer = primenum(number) ? 'yes' : 'no'
-
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!')
-      correctAnswers += 1
-    } else {
-      console.log(`'${userAnswer}' is wrong answer; (Correct answer was '${correctAnswer}').`)
+    for (let i = 5; i * i <= num; i += 6) {
+        if (num % i === 0 || num % (i + 2) === 0) return false
     }
-  }
-
-  console.log(`Congratulations, ${userName}!`);
-  console.log(`You answered correctly ${correctAnswers} out of ${rounds} questions.`)
+    return true
 }
 
-primeGame()
+// Основная игра
+const playPrimeGame = () => {
+    console.log('Welcome to the Brain Games!')
+    const userName = readlineSync.question('May I have your name? ')
+    console.log(`Hello, ${userName}!`)
+    console.log('Answer "yes" if given number is prime. Otherwise answer "no".')
+
+    const totalQuestions = 3
+    for (let i = 0; i < totalQuestions; i++) {
+        const randomNum = Math.floor(Math.random() * 100)
+        const correctAnswer = isPrime(randomNum) ? 'yes' : 'no'
+
+        console.log(`Question: ${randomNum}`)
+        const userAnswer = readlineSync.question('Your answer: ')
+
+        if (userAnswer.toLowerCase() !== correctAnswer) {
+            console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
+            console.log(`Let's try again, ${userName}!`)
+            return
+        }
+
+        console.log('Correct!')
+    }
+
+    console.log(`Congratulations, ${userName}!`)
+}
+playPrimeGame()

@@ -1,57 +1,53 @@
+#!/usr/bin/env node
 // Функция калькулятор
 
-import { helloUser, myName } from '../src/cli.js'
 import readlineSync from 'readline-sync'
 
 
-const randonNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
-
-const randomOp = () => {
-  const operators = ['+', '-', '*']
-  return operators[randonNum(0, operators.length - 1)]
+const getUserName = () => {
+    return readlineSync.question('May I have your name? ')
 }
 
-const calculate = (num1, num2, operator) => {
-  switch (operator) {
-    case '+':
-      return num1 + num2
-    case '-':
-      return num1 - num2
-    case '*':
-      return num1 * num2
-    default:
-      throw new Error('Unknown operator')
-  }
+// Функция генерации рандомного числа
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
+
+// Функция генерации рандомного вопроса
+const generateExpression = () => {
+    const num1 = getRandomNumber(1, 50)
+    const num2 = getRandomNumber(1, 50)
+    const operators = ['+', '-', '*']
+    const operator = operators[getRandomNumber(0, operators.length - 1)]
+    return { expression: `${num1} ${operator} ${num2}`, correctAnswer: eval(`${num1} ${operator} ${num2}`) }
 }
 
-const gameCalc = () => {
-  helloUser()
-  const userName = myName()
-  console.log('What is the result of the expression?')
+// Функция для проверки ответа
+const checkAnswer = (userAnswer, correctAnswer) => {
+    return parseInt(userAnswer, 10) === correctAnswer
+}
 
-  const rounds = 3 // Количество вопросов
-  let correctAnswers = 0
+// Основная игра
+const playCalcGame = () => {
+    console.log('Welcome to the Brain Games!')
+    const userName = getUserName()
+    console.log(`Hello, ${userName}!`)
+    console.log('What is the result of the expression?')
 
-  for (let currentRound = 0; currentRound < rounds; currentRound++) {
-    const num1 = randonNum(1, 20)
-    const num2 = randonNum(1, 20)
-    const operator = randomOp()
-    const question = (`${num1} ${operator} ${num2}`)
-    const correctAnswer = calculate(num1, num2, operator)
-    
-    console.log(`Question: ${question}`)
-    const userAnswer = readlineSync.question('Your answer: ')
+    const totalQuestions = 3
+    for (let i = 0; i < totalQuestions; i++) {
+        const { expression, correctAnswer } = generateExpression()
+        
+        console.log(`Question: ${expression}`)
+        const userAnswer = readlineSync.question('Your answer: ')
 
-    if (parseInt(userAnswer, 10) === correctAnswer) {
-      console.log('Correct!')
-      correctAnswers += 1
-    } else {
-      console.log(`'${userAnswer}' is wrong answer; (Correct answer was '${correctAnswer}').`)
+        if (!checkAnswer(userAnswer, correctAnswer)) {
+            console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
+            console.log(`Let's try again, ${userName}!`)
+            return
+        }
+
+        console.log('Correct!')
     }
-  }
 
-  console.log(`Congratulations, ${userName}!`)
-  console.log(`You answered correctly ${correctAnswers} out of ${rounds} questions.`)
+    console.log(`Congratulations, ${userName}!`)
 }
-
-gameCalc()
+playCalcGame()

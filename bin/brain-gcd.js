@@ -1,45 +1,44 @@
+#!/usr/bin/env node
 // Функция НОД
 
-import { helloUser, myName } from '../src/cli.js'
 import readlineSync from 'readline-sync'
 
+// Функция для генерации рандомного числа
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
 
+// Функция для вычисления НОДа
 const gcd = (a, b) => {
-  while (b) {
-    [a, b] = [b, a % b]
-  }
-  return a
-}
-
-const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min
-
-const gcdGame = () => {
-  helloUser()
-  const userName = myName()
-  console.log('Find the greatest common divisor of given numbers.')
-
-  const rounds = 3 // Количество вопросов
-  let correctAnswers = 0
-
-  for (let i = 0; i < rounds; i++) {
-    const num1 = randomNum(1, 100)
-    const num2 = randomNum(1, 100)
-    const correctAnswer = gcd(num1, num2)
-
-    console.log(`Question: ${num1} ${num2}`)
-    const userAnswer = parseInt(readlineSync.question('Your answer: '), 10)
-
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!')
-      correctAnswers += 1
-    } else {
-      console.log(`'${userAnswer}' is wrong answer; (Correct answer was '${correctAnswer}').`)
+    while (b !== 0) {
+        [a, b] = [b, a % b]
     }
-  }
-
-  console.log(`Congratulations, ${userName}!`)
-  console.log(`You answered correctly ${correctAnswers} out of ${rounds} questions.`)
+    return a
 }
 
-gcdGame()
+// Основная игра
+const playGcdGame = () => {
+    console.log('Welcome to the Brain Games!')
+    const userName = readlineSync.question('May I have your name? ')
+    console.log(`Hello, ${userName}!`)
+    console.log('Find the greatest common divisor of given numbers.')
 
+    const totalQuestions = 3
+    for (let i = 0; i < totalQuestions; i++) {
+        const num1 = getRandomNumber(1, 100)
+        const num2 = getRandomNumber(1, 100)
+        const correctAnswer = gcd(num1, num2)
+
+        console.log(`Question: ${num1} ${num2}`)
+        const userAnswer = readlineSync.question('Your answer: ')
+
+        if (parseInt(userAnswer, 10) !== correctAnswer) {
+            console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
+            console.log(`Let's try again, ${userName}!`)
+            return
+        }
+
+        console.log('Correct!')
+    }
+
+    console.log(`Congratulations, ${userName}!`)
+}
+playGcdGame()

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Функция приветствия
 
-const { helloUser, myName } = require('../src/cli.js')
+import { helloUser, myName } from '../src/cli.js'
 
 
 helloUser()
