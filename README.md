@@ -19,7 +19,7 @@ npm install readline-sync
 
 bash
 
-node bin/brain-games.js
+make brain-games
 
 ### Выбор игры
 
@@ -37,7 +37,7 @@ node bin/brain-games.js
 
 bash
 
-node bin/brain-'название игры'.js
+make brain-'название игры'
 
 #### Например
 
@@ -45,7 +45,7 @@ node bin/brain-'название игры'.js
 
 bash
 
-node bin/brain-calc.js
+make brain-calc
 
 #### Выбирайте игру и наслаждайтесь ею!
 
