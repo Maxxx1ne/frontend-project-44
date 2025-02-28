@@ -2,6 +2,7 @@
 
 import readlineSync from 'readline-sync'
 
+
 export const helloUser = () => {
   console.log('Welcome to the Brain Games!')
 }
