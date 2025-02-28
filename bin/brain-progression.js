@@ -1,3 +1,5 @@
+import { helloUser, myName } from '../src/cli.js'
+
 import readlineSync from 'readline-sync'
 
 const progration = (start, step, length) => {
@@ -12,11 +14,9 @@ const hideElem = (progression) => {
 };
 
 const progGame = () => {
-  console.log('Welcome to the Brain Games!')
-  const userName = readlineSync.question('May I have your name? ')
-  console.log(`Hello, ${userName}!`)
-  console.log('What number is missing in the progression?')
-
+  helloUser()
+  const userName = myName()
+  console.log('Find the greatest common divisor of given numbers.')
   const rounds = 3
   let correctAnswers = 0
 
