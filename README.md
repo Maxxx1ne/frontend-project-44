@@ -2,10 +2,6 @@
 [![Actions Status](https://github.com/Maxxx1ne/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Maxxx1ne/frontend-project-44/actions)
 # Brain Games
 
-[![Node.js CI](https://github.com/your-username/frontend-project-44/actions/workflows/nodejs.yml/badge.svg)](https://github.com/your-username/frontend-project-44/actions/workflows/nodejs.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/your-badge-id/maintainability)](https://codeclimate.com/github/your-username/frontend-project-44/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/your-badge-id/test_coverage)](https://codeclimate.com/github/your-username/frontend-project-44/test_coverage)
-
 **Brain Games** — набор из пяти консольных игр, построенных на арифметической логике. Каждая игра задаёт три вопроса, и для победы нужно правильно ответить на все. 
 
 ## 🎮 Доступные игры
