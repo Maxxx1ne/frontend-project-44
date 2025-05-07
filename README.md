@@ -102,7 +102,7 @@ Your answer: 20
 Correct!
 Congratulations, Charlie!
 ```
-![Третья игрв](https://i.imgur.com/lHWkPYV.gif)
+![Третья игра](https://i.imgur.com/eV4Dikx.gif)
 
 
 
