@@ -62,7 +62,7 @@ Your answer: no
 Correct!
 Congratulations, Alice!
 ```
-![Первая игра](https://pouch.jumpshare.com/preview/bElUbjLz5evM2v8mdGjFa7OaqIbvJ7m4iX9zrgmUiiWfE1GlWtOEMaQs0rdCdlaOAp_nx7RiL5bJoQiugZ45N9XLYgZYBN8ZTans93cXc6U)
+![Первая игра](blob:https://jumpshare.com/60e12954-a0d8-4305-95c7-e00886f6dba3)
 
 
 
@@ -82,7 +82,7 @@ Your answer: 24
 Correct!
 Congratulations, Bob!
 ```
-![Вторая игра]()
+![Вторая игра](https://pouch.jumpshare.com/preview/FU3_3C3Ha_LoTNc2Fkf5x7LAlEp26tLhuCN4wBXqBd4fglhlmHV54dDJT4jAXi2yAp_nx7RiL5bJoQiugZ45N3h_R19glRvcKamlPczJvr8)
 
 
 
@@ -102,6 +102,9 @@ Your answer: 20
 Correct!
 Congratulations, Charlie!
 ```
+![Третья игрв](https://i.imgur.com/lHWkPYV.gif)
+
+
 
 ### 4. Игра "Прогрессия"
 ```bash
@@ -120,6 +123,10 @@ Correct!
 Congratulations, David!
 ```
 
+![Четвертая игра](https://i.imgur.com/Ckky5cF.gif)
+
+
+
 ### 5. Игра "Простое ли число?"
 ```bash
 $ make brain-prime
@@ -136,6 +143,10 @@ Your answer: yes
 Correct!
 Congratulations, Eve!
 ```
+
+![Пятая игра](https://i.imgur.com/r89Jq1T.gif)
+
+
 
 ---
 
