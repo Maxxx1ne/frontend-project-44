@@ -62,7 +62,7 @@ Your answer: no
 Correct!
 Congratulations, Alice!
 ```
-![Первая игра](blob:https://jumpshare.com/60e12954-a0d8-4305-95c7-e00886f6dba3)
+![Первая игра](https://i.imgur.com/8chqC7H.gif)
 
 
 
