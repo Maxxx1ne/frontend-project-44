@@ -122,8 +122,7 @@ Your answer: 12
 Correct!
 Congratulations, David!
 ```
-
-![Четвертая игра](https://i.imgur.com/Ckky5cF.gif)
+![Четвертая игра](https://i.imgur.com/Ksp0Hw2.gif)
 
 
 
