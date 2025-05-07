@@ -62,7 +62,7 @@ Your answer: no
 Correct!
 Congratulations, Alice!
 ```
-![Первая игра](https://i.imgur.com/XXXXXXX.gif)
+![Первая игра](https://imgur.com/a/pFnSZ34)
 
 
 ### 2. Игра "Калькулятор"
