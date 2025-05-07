@@ -23,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/username/brain-games/issues"
   },
-  "homepage": "https://github.com/username/brain-games#readme"
+  "homepage": "https://github.com/username/brain-games#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0"
+  }
 }
