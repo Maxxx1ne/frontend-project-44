@@ -62,7 +62,8 @@ Your answer: no
 Correct!
 Congratulations, Alice!
 ```
-![Первая игра](https://i.imgur.com/X2XIBIq.gif)
+![Первая игра](https://pouch.jumpshare.com/preview/bElUbjLz5evM2v8mdGjFa7OaqIbvJ7m4iX9zrgmUiiWfE1GlWtOEMaQs0rdCdlaOAp_nx7RiL5bJoQiugZ45N9XLYgZYBN8ZTans93cXc6U)
+
 
 
 ### 2. Игра "Калькулятор"
@@ -81,6 +82,9 @@ Your answer: 24
 Correct!
 Congratulations, Bob!
 ```
+![Вторая игра]()
+
+
 
 ### 3. Игра "НОД"
 ```bash
