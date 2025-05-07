@@ -62,6 +62,8 @@ Your answer: no
 Correct!
 Congratulations, Alice!
 ```
+https://imgur.com/a/x8qWgQK
+
 
 ### 2. Игра "Калькулятор"
 ```bash
