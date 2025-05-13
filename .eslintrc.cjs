@@ -1,17 +1,16 @@
 module.exports = {
   env: {
     es2021: true,
-    node: true,
+    node: true
   },
   extends: 'airbnb-base',
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   rules: {
     'no-console': 'off',
     'import/extensions': 'off',
-    'linebreak-style': ['error', 'windows'],
-    'semi': ['error', 'never'], // Добавленное правило
-  },
-};
+    'linebreak-style': ['error', 'windows']
+  }  // <- Здесь не должно быть точки с запятой
+}
