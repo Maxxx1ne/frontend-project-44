@@ -12,5 +12,6 @@ module.exports = {
     'no-console': 'off',
     'import/extensions': 'off',
     'linebreak-style': ['error', 'windows'],
+    'semi': ['error', 'never'], // Добавленное правило
   },
 };
