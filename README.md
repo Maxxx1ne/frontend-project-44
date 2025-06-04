@@ -43,16 +43,6 @@ Brain Games — набор из пяти консольных игр, постр
 
 ## 🚀 Примеры запуска
 
-### 1. "Приветствие"
-$ make brain-games
-
-Welcome to the Brain Games!
-May I have your name? Pasha
-Hello, Pasha!
-![Первая игра](https://imgur.com/a/kFrAvrW)
-
-
-
 ### 2. Игра "Калькулятор"
 $ make brain-calc
 
