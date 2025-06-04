@@ -165,3 +165,16 @@ Correct!
 Congratulations, Pasha!
 ```
 ![Пятая игра](https://s7.ezgif.com/tmp/ezgif-792fba00ae27b5.gif)
+
+
+---
+
+## Технологии
+
+Node.js (v18+)
+
+ESLint
+
+readline-sync
+
+---
