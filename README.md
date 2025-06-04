@@ -43,24 +43,13 @@ Brain Games — набор из пяти консольных игр, постр
 
 ## 🚀 Примеры запуска
 
-### 1. Игра "Проверка на чётность"
-$ make brain-even
+### 1. "Приветствие"
+$ make brain-games
 
 Welcome to the Brain Games!
-May I have your name? Alice
-Hello, Alice!
-Answer "yes" if the number is even, otherwise answer "no".
-Question: 15
-Your answer: no
-Correct!
-Question: 42
-Your answer: yes
-Correct!
-Question: 7
-Your answer: no
-Correct!
-Congratulations, Alice!
-![Первая игра](https://i.imgur.com/8chqC7H.gif)
+May I have your name? Pasha
+Hello, Pasha!
+![Первая игра](https://imgur.com/a/kFrAvrW)
 
 
 
