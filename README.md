@@ -49,7 +49,7 @@ $ make brain-games
 Welcome to the Brain Games!
 May I have your name? Pasha
 Hello, Pasha!
-![Приветствие](https://cs35.clideo.com/p/MGETNiHM56i0XZIy4iTcLQ/8890e0a993227d4ab8297fc46038f33f/clideo_editor_3d58e8891de047e383ea3ccd9d5bac6b.gif)
+![Приветствие](https://s7.ezgif.com/tmp/ezgif-76626c5b2e8394.gif)
 
 
 
