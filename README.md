@@ -43,6 +43,34 @@ Brain Games — набор из пяти консольных игр, постр
 
 ## 🚀 Примеры запуска
 
+### 0. Приветствие
+$ make brain-games
+
+Welcome to the Brain Games!
+May I have your name? Pasha
+Hello, Pasha!
+![Приветствие](https://imgur.com/a/kFrAvrW)
+
+
+
+### 1. Игра "Проверка на чётность"
+$ make brain-even
+
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 15
+Your answer: no
+Correct!
+Question: 6
+Your answer: yes
+Correct!
+Question: 7
+Your answer: no
+Correct!
+Congratulations, Pasha!
+![Первая игра]()
+
+
+
 ### 2. Игра "Калькулятор"
 $ make brain-calc
 
@@ -56,7 +84,7 @@ Correct!
 Question: 3 * 8
 Your answer: 24
 Correct!
-Congratulations, Bob!
+Congratulations, Pasha!
 ![Вторая игра](https://pouch.jumpshare.com/preview/FU3_3C3Ha_LoTNc2Fkf5x7LAlEp26tLhuCN4wBXqBd4fglhlmHV54dDJT4jAXi2yAp_nx7RiL5bJoQiugZ45N3h_R19glRvcKamlPczJvr8)
 
 
@@ -74,7 +102,7 @@ Correct!
 Question: 100 60
 Your answer: 20
 Correct!
-Congratulations, Charlie!
+Congratulations, Pasha!
 ![Третья игра](https://i.imgur.com/eV4Dikx.gif)
 
 
@@ -92,7 +120,7 @@ Correct!
 Question: 10 .. 14 16 18 20
 Your answer: 12
 Correct!
-Congratulations, David!
+Congratulations, Pasha!
 ![Четвертая игра](https://i.imgur.com/Ksp0Hw2.gif)
 
 
@@ -110,7 +138,7 @@ Correct!
 Question: 13
 Your answer: yes
 Correct!
-Congratulations, Eve!
+Congratulations, Pasha!
 ![Пятая игра](https://i.imgur.com/r89Jq1T.gif)
 
 
