@@ -41,7 +41,7 @@ make brain-even
 
 ## 0. Приветствие
 ```bash
-$ make brain-games
+ make brain-games
 ```
 
 ```bash
@@ -51,5 +51,25 @@ Hello, Pasha!
 ```
 ![Привет](https://s7.ezgif.com/tmp/ezgif-76626c5b2e8394.gif)
 
+
+## 1. Игра: "Проверка на чётность"
+```bash
+make brain-even
+```
+
+```bash
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 15
+Your answer: no
+Correct!
+Question: 6
+Your answer: yes
+Correct!
+Question: 7
+Your answer: no
+Correct!
+Congratulations, Pasha!
+```
+![Вторая игра](https://s7.ezgif.com/tmp/ezgif-7ded505959a028.gif)
 
 
