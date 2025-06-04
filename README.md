@@ -72,5 +72,28 @@ Correct!
 
 Congratulations, Pasha!
 ```
-![Вторая игра](https://s7.ezgif.com/tmp/ezgif-7ded505959a028.gif)
+![Первая игра](https://s7.ezgif.com/tmp/ezgif-7ded505959a028.gif)
 
+
+
+## 2. Игра: "Калькулятор"
+
+```bash
+$ make brain-calc
+
+What is the result of the expression?
+Question: 5 + 7
+Your answer: 12
+Correct!
+
+Question: 10 - 4
+Your answer: 6
+Correct!
+
+Question: 3 * 8
+Your answer: 24
+Correct!
+
+Congratulations, Pasha!
+```
+![Вторая игра](https://s7.ezgif.com/tmp/ezgif-7a4241c77a7536.gif)
