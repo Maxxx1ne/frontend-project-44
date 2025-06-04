@@ -18,43 +18,36 @@ Brain Games — набор из пяти консольных игр, постр
 ## Установка
 
 1. Убедитесь, что установлен Node.js (v18+):
-
 ```bash
 node -v
-
 ```
 
 2. Клонируйте репозиторий и перейдите в папку проекта:
-
 ```bash
 git clone https://github.com/your-username/frontend-project-44.git
 cd frontend-project-44
-
 ```
 
 3. Установите зависимости:
-
 ```bash
 make install
-
 ```
 
 4. Запуск любой из игр:
-
 ```bash
 make brain-even
-
 ```
 
-## 0. Приветствие
 
+## 0. Приветствие
+```bash
 $ make brain-games
+```
 
 ```bash
 Welcome to the Brain Games!
 May I have your name? Pasha
 Hello, Pasha!
-
 ```
 ![Привет](https://s7.ezgif.com/tmp/ezgif-76626c5b2e8394.gif)
 
