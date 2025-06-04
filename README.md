@@ -75,7 +75,6 @@ Congratulations, Pasha!
 ![Первая игра](https://s7.ezgif.com/tmp/ezgif-7ded505959a028.gif)
 
 
-
 ## 2. Игра: "Калькулятор"
 
 ```bash
@@ -97,3 +96,72 @@ Correct!
 Congratulations, Pasha!
 ```
 ![Вторая игра](https://s7.ezgif.com/tmp/ezgif-7a4241c77a7536.gif)
+
+
+## 3. Игра "НОД"
+
+```bash
+$ make brain-gcd
+
+Find the greatest common divisor of given numbers.
+Question: 25 50
+Your answer: 25
+Correct!
+
+Question: 14 21
+Your answer: 7
+Correct!
+
+Question: 100 60
+Your answer: 20
+Correct!
+
+Congratulations, Pasha!
+```
+![Третья игра](https://s7.ezgif.com/tmp/ezgif-7a8c7c0524cc82.gif)
+
+
+## 4. Игра "Арифметическая прогрессия"
+
+```bash
+$ make brain-progression
+
+What number is missing in the progression?
+Question: 5 7 9 .. 13 15
+Your answer: 11
+Correct!
+
+Question: 2 5 8 11 .. 17
+Your answer: 14
+Correct!
+
+Question: 10 .. 14 16 18 20
+Your answer: 12
+Correct!
+
+Congratulations, Pasha!
+```
+![Четвертая игра](https://s7.ezgif.com/tmp/ezgif-7dcb25a4f84962.gif)
+
+
+## 5. Игра "Простое ли число?"
+
+```bash
+$ make brain-prime
+
+Answer "yes" if given number is prime. Otherwise answer "no".
+Question: 7
+Your answer: yes
+Correct!
+
+Question: 10
+Your answer: no
+Correct!
+
+Question: 13
+Your answer: yes
+Correct!
+
+Congratulations, Pasha!
+```
+![Пятая игра](https://s7.ezgif.com/tmp/ezgif-792fba00ae27b5.gif)
